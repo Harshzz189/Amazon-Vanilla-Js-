@@ -104,7 +104,7 @@ if(cart.length === 0){
     document.querySelector('.cart-quantity').innerText = 0;
 }else{
     document.querySelector('.cart-quantity').innerText = totalQuantity;
-
+}
 
    
  
