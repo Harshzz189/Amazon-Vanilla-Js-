@@ -26,7 +26,7 @@ html += `
      <div class="cart-items">
       <div class="image-container">
       <div class="final-date"></div>
-          <img class="selected-item-image" src="${product.image}">
+          <img class="selected-item-image" src="../${product.image}">
       </div>
       <div class="product-info-section">
 
