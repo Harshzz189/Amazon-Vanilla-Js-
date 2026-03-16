@@ -1,0 +1,291 @@
+  body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+.header-bar{
+       display:flex;
+       flex-direction:row;
+       background-color: rgb(15, 17, 17);
+       height:50px;
+       gap:10px;
+       padding: 12px 0px;
+       position: sticky;
+       top:0;
+       z-index: 1000;
+       width:100%;
+    }
+    .accounts-link{
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .amazon-logo{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+       height: 100%;
+    }
+    .amazon-picture{
+        height:50px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+    .amazon-link{
+    background-color: rgb(15, 17, 17);
+    color:white;
+    font-size: 14px;
+    padding-bottom:8px;
+    }
+    .location-icon{
+        height:20px;
+        background-color:rgb(15, 17, 17) ;
+    }
+    p{
+        color:white;
+        margin:0;
+    }
+    .header-address
+    {
+        display:grid;
+       grid-template-columns:auto auto;
+       align-items: center;
+       height: 100%;
+       overflow: hidden;
+    }
+    .location-name
+    {
+        margin:0;
+        font-size: 13px;
+        color:rgb(171, 169, 169);
+    }
+    .update-location{
+        margin:0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .catagory-box{
+        background-color: rgb(203, 200, 200);
+        height:100%;
+        max-width:150px;
+    }
+    .search-box{
+        display:flex;
+        min-width: 150px;
+        flex:1 ;
+        height:90%;
+        border-left: 0px;
+        border-right: 0px;
+    }
+     .search-icon{
+        height: 95%;
+        width:40px;
+        background-color: orange;
+
+    }
+    .fa-search{
+        padding-top: 20px;
+        padding-left: 10px;
+        height:100%;
+    }
+    .search-block{
+        display:flex;
+        flex:1 0 auto;
+        flex-direction: row;
+        align-items: center;
+        height:100%;
+    }
+    .language-block
+    {
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        height: 100%;
+    }
+    .language-box{
+        background-color: rgb(15, 17, 17);
+        color:white;
+    }
+    .accounts-block{
+        display:flex;
+        flex-direction:column;
+        height:100%;
+        overflow: hidden;
+    }
+    .accounts-link{
+        color:white;
+    }
+    .fa-cart-arrow-down{
+        font-size: 50px;
+        object-fit: contain;
+    }
+    .cart-quantity{
+        background-color: orange;
+        color:white;
+        position: absolute;
+        top:2px;
+        left:22px;
+        border-radius: 50px;
+        height:22px;
+        width: 22px;
+        text-align: center;
+    }
+    .indian-flag{
+        height:50%;
+    }
+    .cart-logo-block
+    {
+        position:relative;
+        height: 100%;
+    }
+    @media(max-width:400px)
+    {    .search-box{
+        min-width: 80px;
+    }
+  .product-image-container {
+    height: auto;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+       .catagory-box{
+        display:none;
+       }
+        .side-menu-list li:nth-child(11){
+            display: none;
+        }
+    }
+    @media(max-width:500px)
+    {  
+        .accounts-block,.catagory-box{
+            display: none;
+        }
+        .search-box{
+            min-width:100px;
+        }
+        .side-menu-list li:nth-child(7){
+            display: none;
+        }
+    }
+    @media (max-width:650px)
+    {
+        .text-account{
+            display:none ;
+        }
+
+        .side-menu-list li:nth-child(5){
+            display:none;
+        }
+        .accounts-block{
+            justify-content: center;
+        }
+    }
+
+    @media (max-width :800px)
+    {
+      .header-address,.language-block{
+        display:none;
+      }
+      .side-menu-list li:nth-child(4),
+      .side-menu-list li:nth-child(6){
+         display:none;
+      }
+
+      
+    }
+    @media (max-width:1300px) 
+    {
+       .language-block{
+        display:none;
+       }
+       .side-menu-list li:nth-child(2),
+       .side-menu-list li:nth-child(9){
+        display:none;
+       }
+    }
+    
+    .amazon-logo:hover,.accounts-block:hover,.cart-logo-block:hover,.language-block:hover ,.header-address:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
+    .category-bar{
+        background-color:#0F1111 ;
+        position: sticky;
+        width:100%;
+        flex-shrink: 1;
+        padding:2px;
+
+    }
+    .side-menu-list li{
+        color:white;
+        list-style: none;
+       border:1px solid transparent;
+       padding:12px 8px;
+    }
+    .side-menu-list{
+        display:flex;
+        flex-direction: row;
+        height:auto;
+       align-items: center;
+       justify-content: space-around;
+       position: sticky;
+       top:74px;
+       z-index: 999;
+       margin:0;
+       padding-left: 0px;
+       
+    }
+    .side-menu-list li:hover{
+        border:1px solid white;
+        cursor: pointer;
+        transition:0.03s ease;
+    }
+    .side-menu-class
+    {
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .side-menu-button{
+        background-color: transparent;
+        border:0;
+        color:white;
+        cursor: pointer;
+    }
+    .fa bars{
+        font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .sign-in-text{
+        color:white;
+    }
+    .rating-image{
+        height:25px;
+        object-fit: contain;
+    }
+   .rating-review-container{
+    display:flex;
+    align-items:center;
+    padding: 3px;
+    gap:6px;
+}
+   .reviews-text{
+    font-size: clamp(16px,1vw,20px);
+}
+
+    body{
+         font-family: Arial, Helvetica, sans-serif;
+    }
+     .product-price-text{
+    font-size: clamp(18px,1.6vw,26px);
+    font-weight:500;
+}
+   .product-name-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .product-name{
+    font-size: clamp(14px,1.3vw,18px);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
