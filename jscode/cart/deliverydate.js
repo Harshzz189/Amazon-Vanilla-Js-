@@ -30,6 +30,7 @@ export function deliveryDateUpdate()
  priceSumary();
 
 })
+ updateFinal();
     });
     
 }
