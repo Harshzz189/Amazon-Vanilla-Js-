@@ -67,7 +67,6 @@
     }
     .search-box{
         display:flex;
-        min-width: 100px;
         flex:1 ;
         height:90%;
         border-left: 0px;
