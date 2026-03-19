@@ -67,7 +67,8 @@
     }
     .search-box{
         display:flex;
-        flex:1 ;
+        flex:1;
+        min-width :150px;
         height:90%;
         border-left: 0px;
         border-right: 0px;
@@ -136,7 +137,7 @@
     }
     @media(max-width:400px)
     {    .search-box{
-        min-width: 80px;
+        min-width:0px;
     }
   .product-image-container {
     height: auto;
